@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tikamkumar.numbersspellings.Blackboard"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                app:tint="#6200EA"
+                android:contentDescription="@string/back"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="#206200EA"
+                android:layout_marginStart="20dp"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="@string/app_name"
+                android:textColor="@color/Blue"
+                android:textSize="22sp"
+                android:textStyle="normal"
+                 />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFDE7">
+        <ImageView
+            android:id="@+id/backg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:layout_margin="1dp"
+            android:contentDescription="@string/background"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:contentDescription="@string/heading"
+            android:layout_height="45dp"
+            android:src="@drawable/img_10"
+            android:layout_marginTop="25dp"
+            />
+        <TextView
+            android:id="@+id/tablenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:shadowColor="#FFFDE7"
+            android:shadowRadius="2"
+            android:shadowDx="2"
+            android:fontFamily="serif-monospace"
+            android:layout_marginTop="36dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="35dp"
+            >
+
+            <TextView
+                android:id="@+id/NumMath"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:shadowColor="@color/white"
+                android:shadowRadius="1"
+                android:shadowDx="1"
+                android:fontFamily="monospace"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/equal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:shadowColor="@color/white"
+                android:shadowRadius="1"
+                android:shadowDx="1"
+                android:gravity="center_vertical"
+                android:fontFamily="monospace"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/NumSpll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:shadowColor="@color/white"
+                android:shadowRadius="1"
+                android:shadowDx="1"
+                android:fontFamily="monospace"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/table"
+            app:srcCompat="@drawable/img_11"
+            android:layout_gravity="bottom"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:id="@+id/allclear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/img_12"
+            android:layout_gravity="bottom"
+            android:scaleType="center"
+            android:contentDescription="@string/duster"
+            android:layout_marginStart="210dp"
+            android:layout_marginBottom="15dp"/>
+
+        <ImageView
+            android:id="@+id/chock"
+            android:layout_width="50dp"
+            android:layout_height="21dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="75dp"
+            android:contentDescription="@string/chalk"
+            android:layout_marginBottom="13dp"
+            android:scaleType="center"
+            app:srcCompat="@drawable/img_18" />
+
+    </FrameLayout>
+
+
+</LinearLayout>
